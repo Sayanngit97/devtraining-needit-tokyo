@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="0a1f45c59798a55032b0b3b6f053af56" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Other" max_length="40" name="other" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="When Needed" mandatory="true" max_length="40" name="u_calendar_date_time_5" type="calendar_date_time"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="3" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="string">
@@ -26,6 +27,7 @@
                 <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
                 <element inactive_on_update="false" label="Your department choice 1" sequence="6" value="your department choice 1"/>
                 <element inactive_on_update="false" label="Your department choice 2" sequence="7" value="your department choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="When Needed" mandatory="true" max_length="40" name="when_needed" type="glide_date_time"/>
